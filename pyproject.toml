@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iglab"
+version = "0.1.0"
+description = "Computational companion to Information Geometry for the Impatient"
+authors = [{name = "Mirco A. Mannucci", email = "mirco@holomathics.com"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "sympy>=1.11"]
+
+[project.optional-dependencies]
+visual = ["matplotlib>=3.7", "jupyterlab>=4.0", "ipykernel"]
+test = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

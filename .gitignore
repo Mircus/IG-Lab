@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+book/*.aux
+book/*.log
+book/*.out
+book/*.toc
+book/*.synctex.gz
+.DS_Store
