@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ig_lab_logo.png" alt="IG-Lab — Information Geometry" width="220">
+  <img src="assets/ig_lab_logo.png" alt="IG-Lab — Information Geometry" width="500">
 </p>
 
 # IG-Lab — Information Geometry for the Impatient
