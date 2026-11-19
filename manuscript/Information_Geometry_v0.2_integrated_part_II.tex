@@ -10,7 +10,7 @@
 \setlist[enumerate]{itemsep=.25em,topsep=.2em}
 \setlist[itemize]{itemsep=.2em,topsep=.2em}
 \renewcommand{\baselinestretch}{1.045}
-\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\footnotesize INFORMATION GEOMETRY FOR THE IMPATIENT}\fancyhead[R]{\footnotesize THE MATHEMATICAL CORE}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0.3pt}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\footnotesize INFORMATION GEOMETRY FOR THE IMPATIENT}\fancyhead[R]{\footnotesize GEOMETRY AND INVARIANCE}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0.3pt}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -21,17 +21,17 @@
 \newcommand{\ip}[2]{\langle #1,#2\rangle}
 \newcommand{\KL}{\mathrm{KL}}
 \newcommand{\grad}{\nabla}
-\setcounter{section}{6}\setcounter{page}{23}
+\setcounter{section}{5}\setcounter{page}{20}
 \begin{document}
 \begin{center}
-{\Large\bfseries Part II --- The Mathematical Core}\par
+{\Large\bfseries Part II --- The Geometry Behind the Formulas}\par
 \vspace{.3em}
-{\small Research extension for Working Edition 0.2 --- November 2026}\par
+{\small Mathematical foundations --- November 2026}\par
 \end{center}
 
-This extension is intended to be read immediately after the original four-chapter mathematical narrative and ten solved exercises. It strengthens the central claims rather than replacing the original pedagogical examples. In particular, we pass from the statement that Fisher geometry is ``natural'' to a finite, precise uniqueness theorem, with the invariance hypothesis exposed and the proof written out. Subsequently, divergence, duality, projection and natural-gradient flow become the consequences of stated formulas rather than metaphors.
+The preceding chapters introduced statistical manifolds through Gaussian and categorical models, dual affine geometry, and natural gradients, then tested the ideas in ten solved exercises. The present part supplies the mathematical structure behind those examples. In particular, we pass from the statement that Fisher geometry is ``natural'' to a finite, precise uniqueness theorem, with the invariance hypothesis exposed and the proof written out. Subsequently, divergence, duality, projection and natural-gradient flow become the consequences of stated formulas rather than metaphors.
 
-\textbf{Notational agreement.} A simplex with $n$ outcomes has dimension $n-1$; all our probability coordinates are strictly positive unless explicitly stated. For a stochastic matrix $K$, the \emph{columns} sum to one and $q=Kp$. We use KL in the directional order $\KL(p\Vert q)$; reversing its arguments changes the induced affine orientation. In the original edition's Gaussian example, the straight mixture path means \emph{affine in expectation coordinates}; the literal mixture of two Gaussian densities usually is not Gaussian.
+\textbf{Notational agreement.} A simplex with $n$ outcomes has dimension $n-1$; all our probability coordinates are strictly positive unless explicitly stated. For a stochastic matrix $K$, the \emph{columns} sum to one and $q=Kp$. We use KL in the directional order $\KL(p\Vert q)$; reversing its arguments changes the induced affine orientation. In the Gaussian example of Chapter 3, the straight mixture path means \emph{affine in expectation coordinates}; the literal mixture of two Gaussian densities usually is not Gaussian.
 
 \section{Why Fisher geometry is forced}
 
@@ -367,7 +367,7 @@ Starting from $g_p(u,v)=\sum_i u_iv_i/p_i$, prove (\ref{eq:replicator}) for $L(p
 \end{exercise}
 \emph{Answer.} The Fisher dual of $dL$ can be represented by $p_ic_i$, but this has nonzero sum. Subtract $p_i\overline c$ to obtain a tangent vector. The descent derivative is $-\sum_i p_i(c_i-\overline c)c_i=-\mathrm{Var}_p(c)$.
 
-\subsection{An explicit rigour ledger for the next edition}
+\subsection{Scope and limitations of our theorems}
 
 \begin{tabular}{p{.25\linewidth}p{.64\linewidth}}
 \toprule
